@@ -57,4 +57,4 @@ spring:
         max-active: 8
     lettuce:
       pool:
-        max-active: 
+        max-active: 8
