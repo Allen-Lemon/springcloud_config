@@ -1,3 +1,16 @@
+#设置mybatis
+mybatis:
+  mapper-locations:
+  - classpath:mapper/*.xml
+  type-aliases-package: com.springcloud.entity  #设置实体类的位置
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰命名法
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+pagehelper:
+  helper-dialect: mysql                 #设置数据库
+  reasonable: true                      #启动分页合理化参数
+  support-methods-arguments: true
+#设置spring连接druid的数据连接池
 spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
